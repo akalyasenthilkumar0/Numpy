@@ -1,0 +1,74 @@
+#----------------------------------------------------------------------------------------------------------
+# numpy introduction
+#----------------------------------------------------------------------------------------------------------
+
+#1. Checking the version of numpy
+
+import numpy as np
+version = np.__version__
+print(version)
+
+#-----------------------------------------------------------------------------------------------------------
+
+#2. Creating an array by using numpy
+
+import numpy as np  #importing numpy alias np ( alias means referring the existing name as new name by using different name)
+arr = np.array([1,2,3,4,5,6])  #creating array by using np.array() 
+print(arr)  #printing the array
+print(type(arr))  #printing the type of the array by using type()
+
+#-----------------------------------------------------------------------------------------------------------
+
+#3. Difference between pyhton lists and numpy array
+
+python_lists = [10,20,30,40,50]
+numpy_array = np.array([10,20,30,40,50])
+print(type(python_lists))
+print(type(numpy_array))
+
+#------------------------------------------------------------------------------------------------------------
+
+#4. Allows to perform numerical operations without using loops(for & while)
+
+import numpy as np
+marks = np.array([90,89,78,77,92])
+print("Marks before updating:",marks)
+print("Marks after updating:", marks + 5)
+
+#------------------------------------------------------------------------------------------------------------
+
+#5. Create an array containing five random values and add 50 to each value without using loops
+
+import numpy as np
+arr = np.array([750,868,354,6754,9087])
+a = arr+50 
+print("Five Favourite numbers:", arr)
+print("Five Favourite number after adding 50 to each:", a)
+
+#-------------------------------------------------------------------------------------------------------------
+
+#6. Create an array with first five multiples of 5 and multiply each vlaue by 2 
+
+import numpy as np
+mul = np.array([5,10,15,20,25])
+twice_mul = mul*2
+print("Multiples of 5 are:",mul)
+print("Twice of the multiples of 5 are:",twice_mul)
+
+#---------------------------------------------------------------------------------------------------------------
+
+#7. Create an array with first 8 multiples of 6 and compute the sum, mean, maximum and minimum value of the array 
+
+import numpy as np
+arr = np.array([6,12,18,24,30,36,42,48])
+print("Multiples of 6:", arr)
+tot = sum(arr)
+mean = sum(arr)//len(arr)
+maximum = max(arr)
+minimum = min(arr)
+print("Sum of array:", tot)
+print("Mean of array:", mean)
+print("Maximum value in the array:", maximum)
+print("Minimum value in the array:", minimum)
+
+#-----------------------------------------------------------------------------------------------------------------
