@@ -66,3 +66,45 @@ print("Size of the", arr.shape ,"array : ", arr.size)
 print("Bytes occupied by each element : ", arr.itemsize)
 print("Total number of bytes occupied by the array : ", arr.nbytes)
 
+#------------------------------------------------------------------------------------------------------------
+
+#7. Array Reshaping
+
+import numpy as np 
+arr = np.array([54,74,85,25,36,45,96,69,])
+print("Original Array:", arr)
+print("Dimension of the Array:", arr.ndim)
+print("Size of the given Array:", arr.size)
+print("The given array can be reshaped as follows")
+new_arr_1 = arr.reshape(2,4)
+print("First Array : ", new_arr_1)
+print("Dimension of the First Array:", new_arr_1.ndim)
+print("Size of the First Array:", new_arr_1.size)
+new_arr_2 = arr.reshape(4,2)
+print("Second Array :", new_arr_2)
+print("Dimension of the Second Array:", new_arr_2.ndim)
+print("Size of the Second Array:", new_arr_2.size)
+
+#------------------------------------------------------------------------------------------------------------
+
+#8. Default Array Reshape
+
+import numpy as np 
+arr = np.arange(1,37)
+print("\nOriginal Array\n " ,arr)
+a = arr.reshape(12,-1) #Column assigned automatically
+b = arr.reshape(-1, 3) #Row assigned automatically
+c = arr.reshape(6,-1)  #Column assigned automatically
+print("First reshaped array:\n",a)
+print("Dimension:", a.ndim) #determining the dimension of the reshaped array
+print("Shape:", a.shape) #determing the shape of the reshaped array
+print("Size:",a.size)  #determining the size of the reshaped array 
+print("Second reshaped array:\n",b)
+print("Dimension:", b.ndim)
+print("Shape:", b.shape)
+print("Size:", b.size)
+print("Third reshaped array:\n",c)
+print("Dimension:", c.ndim)
+print("Shape:", c.shape)
+print("Size:", c.size)
+
